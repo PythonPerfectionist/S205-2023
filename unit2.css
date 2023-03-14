@@ -1,0 +1,50 @@
+body
+{
+  background-color:black;
+  text-align:left;
+  font-family:cursive;
+  background-image: url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==");
+  background-repeat: no-repeat;
+}
+h1
+{
+  color:purple;
+  opacity: 0.5;
+}
+h5
+{
+  color:turquoise;
+  opacity:0.1;
+}
+button
+{
+  color:white;
+  background-color: black;
+  padding: 10px 10px;
+  font-family: monospace;
+  margin:4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+div{
+  text-align: center;
+}
+#different
+{
+  color:yellow;
+}
+#different:hover{
+  opacity: 1;
+  background-color:black;
+}
+h1:hover{
+  opacity:0;
+}
+#overlay
+{
+  position:dixed;
+  background-color:white;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
