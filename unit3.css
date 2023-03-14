@@ -9,4 +9,29 @@
 body
 {
   background-color:black;
+  color:white;
+}
+.static_pos
+{
+  position:static;
+  color:yellow
+}
+.relative_pos
+{
+  position:relative;
+  bottom:60px;
+  left:400px;
+  color:cyan;
+}
+.absolute_pos
+{
+  position:absolute;
+  bottom:60px;
+  left:400px;
+  color:red;
+}
+.fixed_pos
+{
+  position:fixed;
+  top:400;
 }
