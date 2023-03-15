@@ -1,0 +1,42 @@
+.aBox
+{
+  float:left;
+  width:30%;
+  filter: opacity(0.75) drop-shadow(0 0 magenta);
+}
+.aBox:hover{
+
+  filter: opacity(0.75) drop-shadow(0 0 violet);
+}
+
+.window{
+  width:40%;
+  float:left;
+}
+#reset
+{
+  border-radius: 10px;
+  border-width: small;
+  border-color: cyan;
+  color:cyan;
+  background-color:black;
+  padding: 10px;
+  font-size:20px;
+}
+#reset:hover{
+  border-color: yellow;
+  color:yellow;
+}
+#isWin
+{
+  color:cyan;
+  font-family:monospace;
+  font-size: 30px;
+}
+body
+{
+  background-color:black;
+}
+.clear_both{
+  clear:both;
+}

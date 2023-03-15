@@ -79,6 +79,8 @@ li a:hover{
 }
 iframe{
   float:left;
+  height:100%;
+  
 }
 .sideOfFrame{
   left:30px;
@@ -86,4 +88,29 @@ iframe{
 }
 .alignCenter{
   text-align: center;
+}
+h1
+{
+  text-align= center;
+  color:inherit;
+}
+#vbPage
+{
+  background-color:cyan;
+  color:black;
+  height:200px;
+}
+#cardPage
+{
+  background-color:yellow;
+  color:black;
+  height:40%;
+  clear:both;
+}
+.infoPage
+{
+  text-align:center;
+  height:100%;
+  font-family: fantasy;
+  border-radius: 20px;
 }
