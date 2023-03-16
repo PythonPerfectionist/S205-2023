@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "unit7.css">
+    <title></title>
+  </head>
+  <body>
+    <form action = "" onsubmit = "return formVlidation" method = "GET">
+      <fieldset>
+        <legend>MyForm</legend>
+        <div>
+          <label>Name:
+          <input type= "text" name = "name" placeholder = "Enter your full name: " required/>
+          </label>
+        </div>
+        <div>
+          <label>Class:
+          <input type= "text" name = "class" placeholder = "Enter your class: "/>
+          </label>
+        </div>
+        <div>
+          <label>Age:
+          <input type= "text" name = "age" placeholder = "Enter your age: " />
+          </label>
+        </div>
+        <div>
+          <label>Phone Number:
+          <input type= "tel" name = "phone" placeholder = "Enter your Phone number: " required/>
+          </label>
+        </div>
+        <div>
+          <label>Choose your favourite cuisine among these:
+            <select name = "cuisinePref" required>
+              <option value ="0" selected></option>
+              <option value ="1">Chinese</option>
+              <option value ="2">Korean</option>
+              <option value ="3">Japanese</option>
+              <option value ="4">Western</option>
+              <option value ="5">Some asian cuisine</option>
+              <option value ="6">Other</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>Date of Birth:
+          <input type= "date" name = "DoB">
+          </label>
+        </div>
+        <div>
+          <script>function outputUpdate(value){
+            document.getElementById("output").innerHTML = value;
+          }
+          </script>
+          <label>Rate: <pre>How much do you like coding?</pre>
+            <input type= "range" min = "0" max = "10" step = "1" name=  "likeValue"
+            value = "5" oninput = "outputUpdate(value)"/>
+            <output for = "rating" id = "output">5</output>
+          </label>
+        </div>
+        <div>
+          <label>Comments: <br>
+          <textarea name = "comments" placeholder = "Enter Comments"></textarea>
+          </label>
+        </div>
+        <div>
+          <label>Email:
+          <input type= "email" name = "email" placeholder = "Enter email" required/>
+          </label>
+        </div>
+        <div>
+          <label>CODING is hard:
+          <input type= "checkbox" name = "coding" id= 'coding' checked>
+          </label>
+        </div>
+
+        <div>
+          <button type = "submit" id = "submit-form">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+  <script src = "unit7.js"></script>
+</html>
