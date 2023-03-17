@@ -1,0 +1,67 @@
+ul
+{
+  background-color: white;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  float:left;
+}
+li{
+  float:left;
+}
+li a{
+  display:block;
+  color:black;
+  font-family: monospace;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  display:block;
+}
+#leftList
+{
+  width:80%;
+}
+#rightList
+{
+  width:20%;
+  height:100%;
+}
+#rightListDiv
+{
+  height:52px;
+}
+#mainPicture
+{
+  width:100%;
+}
+.fullDiv
+{
+  width:100%;
+}
+.descr
+{
+  text-align: center;
+}
+.rela_pos
+{
+  position:relative;
+}
+.randomLine
+{
+  color:gold;
+  position:relative;
+  bottom:20px;
+}
+body
+{
+  font-family:monospace;
+}
+#footer
+{
+  background-color:beige;
+  text-align: center;
+  font-size: 15px;
+  padding:3px;
+}

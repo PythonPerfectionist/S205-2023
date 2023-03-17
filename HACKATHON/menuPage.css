@@ -1,6 +1,6 @@
 ul
 {
-  background-color: blue;
+  background-color: white;
   list-style-type: none;
   margin:0;
   padding:0;
@@ -12,7 +12,8 @@ li{
 }
 li a{
   display:block;
-  color:white;
+  color:black;
+  font-family: monospace;
   text-align:center;
   padding:14px 16px;
   text-decoration:none;
@@ -20,14 +21,30 @@ li a{
 }
 #leftList
 {
-  width:70%;
+  width:80%;
 }
 #rightList
 {
-  width:30%;
+  width:20%;
   height:100%;
 }
 #rightListDiv
 {
   height:52px;
+}
+.optionDiv
+{
+  float:left;
+
+}
+.optionImage
+{
+  width:300px;
+  height:300px;
+}
+body
+{
+  font-family: monospace;
+  color:black;
+  text-decoration:none;
 }
