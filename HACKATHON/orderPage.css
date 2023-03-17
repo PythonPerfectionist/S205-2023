@@ -3,6 +3,40 @@
   height:300px;
   width:300px;
 }
+ul
+{
+  background-color: white;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  float:left;
+}
+li{
+  float:left;
+}
+li a{
+  display:block;
+  color:black;
+  font-family: monospace;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  display:block;
+}
+#leftList
+{
+  width:80%;
+}
+#rightList
+{
+  width:20%;
+  height:100%;
+}
+#rightListDiv
+{
+  height:52px;
+}
 body
 {
   font-family: monospace;
@@ -11,6 +45,7 @@ body
 #leftSide
 {
   text-align:center;
+  clear:both;
 }
 #description
 {

@@ -35,6 +35,8 @@ li a{
 .optionDiv
 {
   float:left;
+  color:black;
+  padding:5px;
 
 }
 .optionImage
