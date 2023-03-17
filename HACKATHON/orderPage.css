@@ -1,0 +1,19 @@
+#drinkPicture
+{
+  height:300px;
+  width:300px;
+}
+body
+{
+  font-family: monospace;
+  background-color: beige;
+}
+#leftSide
+{
+  text-align:center;
+}
+#description
+{
+  text-align:center;
+  font-size:15px
+}
