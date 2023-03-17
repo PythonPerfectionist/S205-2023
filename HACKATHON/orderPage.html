@@ -22,30 +22,84 @@
     </div>
     <div id = "leftSide">
       <h1 id = "mainHeading"></h1>
+      <p id = "cost"></p>
       <img id = "drinkPicture">
     </div>
     <p id = "description"></p>
+    <form action = "https://script.google.com/macros/s/AKfycbzXDR_DxIRPzOYERRLj0YslQQ_kJ28VzUcHOI5ft-w2AP6I-yk9mGy6K_1Kcc1YVKU5/exec" onsubmit = " formValidation()" method = "POST" name = "interest">
+      <fieldset>
+        <legend>Order</legend>
+        <div>
+          <label>Percentage of sugar:
+            <select name = "sugarPercent" required>
+              <option value ="0" selected></option>
+              <option value ="1">0%</option>
+              <option value ="2">25%</option>
+              <option value ="3">50%</option>
+              <option value ="4">75%</option>
+              <option value ="5">100%</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>Topping:
+            <select id = "toppingType" onchange = "addToppingCost()" required>
+              <option value ="0" selected></option>
+              <option value ="1">Black Pearls</option>
+              <option value ="2">Brown Sugar Pearls(+$0.20)</option>
+              <option value ="3">Aloe Vera Pearls(+$0.50)</option>
+              <option value ="4">Passionfruit Boba Pop(+$0.60)</option>
+              <option value ="5">Chocolate Pearls(+$0.20)</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>Ice Level:
+            <select id = "iceLevel" onchange = "addIceCost()" required>
+              <option value ="0" selected></option>
+              <option value ="1">No ice(+$0.50)</option>
+              <option value ="2">A little ice</option>
+              <option value ="3">Normal level</option>
+              <option value ="4">A lot of ice</option>
+            </select>
+          </label>
+        </div>
+        <p id = "totalCost">Total cost: </p>
+        <div>
+          <button type = "submit" id = "submit-form">Add to Cart</button>
+        </div>
+      </fieldset>
+    </form>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const orderType = urlParams.get('name');
       if (orderType == "oolong"){
         document.getElementById("mainHeading").innerHTML = "Oolong Tea";
+        document.getElementById("cost").innerHTML = "$5.50";
+        document.getElementById("totalCost").innerHTML += "$5.50";
         document.getElementById("drinkPicture").src = "https://sugaryums.co.uk/wp-content/uploads/2022/03/Oolong-Milk-Tea-SugarYums-4.jpg";
-        document.getElementById("description").innerHTML = "One and only drink in Singapore done by Teh Buih. Dark roasted oolong's warm and earthy aroma is reminiscent of a late harvest wine. The complex flavor profile has hints of honeysuckle, roasted barley, and nuts. Expertly dark roasted, this oolong could convert even a coffee lover to loose leaf tea mix. A unique blend of freshly roasted oolong tea leaves sourced from all around the world added with yellow milk. Smooth yet strong oolong taste with a combination of yellow milk"
+        document.getElementById("description").innerHTML = "One and only drink in Singapore done by Teh Buih. Dark roasted oolong's warm and earthy aroma is reminiscent of a late harvest wine. The complex flavor profile has hints of honeysuckle, roasted barley, and nuts. Expertly dark roasted, this oolong could convert even a coffee lover to loose leaf tea mix. A unique blend of freshly roasted oolong tea leaves sourced from all around the world added with yellow milk. Smooth yet strong oolong taste with a combination of yellow milk";
       } else if (orderType == "brownsugar"){
         document.getElementById("mainHeading").innerHTML = "Brown Sugar Tea";
+        document.getElementById("cost").innerHTML = "$5.00";
+        document.getElementById("totalCost").innerHTML += "$5.00";
         document.getElementById("drinkPicture").src = "https://carmyy.com/wp-content/uploads/2021/12/Brown-Sugar-Milk-Tea-4.jpg";
-        document.getElementById("description").innerHTML = "Bestseller for brown sugar lovers. A combination of Brown Sugar Boba with fresh milk added with a pinch of “Teh Buih” ‘s signature Hokkaido Chizu. (Brown Sugar Pearls Included)"
+        document.getElementById("description").innerHTML = "Bestseller for brown sugar lovers. A combination of Brown Sugar Boba with fresh milk added with a pinch of “Teh Buih” ‘s signature Hokkaido Chizu. (Brown Sugar Pearls Included)";
       } else if (orderType == "matcha"){
         document.getElementById("mainHeading").innerHTML = "Matcha Milk Tea";
+        document.getElementById("cost").innerHTML = "$6.10";
+        document.getElementById("totalCost").innerHTML += "$6.10";
         document.getElementById("drinkPicture").src = "https://carmyy.com/wp-content/uploads/2022/01/matcha-bubble-tea-new.jpg";
-        document.getElementById("description").innerHTML = "A unique blend of smooth Uji Matcha whisked to perfection combining our exclusive blend of red tea with milk. Uji Matcha is our highest grade matcha, prepared from young first flush green tea leaves at Uji in Kyoto."
+        document.getElementById("description").innerHTML = "A unique blend of smooth Uji Matcha whisked to perfection combining our exclusive blend of red tea with milk. Uji Matcha is our highest grade matcha, prepared from young first flush green tea leaves at Uji in Kyoto.";
       }else{
         document.getElementById("mainHeading").innerHTML = "Chocolate Milk Tea";
+        document.getElementById("cost").innerHTML = "$5.50";
+        document.getElementById("totalCost").innerHTML += "$5.50";
         document.getElementById("drinkPicture").src = "https://myveganminimalist.com/wp-content/uploads/2022/02/Chocolate-Bubble-Milk-Tea-13.jpg";
-        document.getElementById("description").innerHTML = "An instant classic made with our exclusive milk tea topped with creamy Hershey chocolate that will satisfy your chocolatey cravings as well as your milk tea ones."
+        document.getElementById("description").innerHTML = "An instant classic made with our exclusive milk tea topped with creamy Hershey chocolate that will satisfy your chocolatey cravings as well as your milk tea ones.";
       }
     </script>
 
   </body>
+  <script src = "hackathon.js"></script>
 </html>
